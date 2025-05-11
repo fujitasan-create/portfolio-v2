@@ -1,0 +1,248 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.headers{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 80px;
+}
+
+.header_left h3{
+    margin:0;
+    color: #885a32;
+}
+
+.header_right a{
+    text-decoration: underline;
+    margin: 20px;
+}
+
+.header_right a:hover {
+    color:rgb(255, 168, 5);
+}
+
+#headerback{
+    background-color: rgb(193, 229, 244);
+    padding: 15px;
+}
+
+.typewriter {
+    display: inline-block;
+    overflow: hidden;             
+    white-space: nowrap;
+    border-right: 2px solid black;          
+    animation: typing 3s steps(20, end), blink 0.7s step-end infinite;
+    font-family: monospace;
+    font-size: 32px;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to   { width: 100% }
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent }
+  }
+
+.intro{
+    background-image: url("mainpic.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 1000px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.intro::before{
+    content:"";
+    position:absolute;
+    top:0; left:0; right:0; bottom:0;
+    background-color: rgba(0,0,0,0.25);
+    z-index: 1;
+}
+
+.intro h1{
+    text-align: center;
+    font-size: 75px;
+    margin:0 ;
+    color:whitesmoke;
+    position:relative;
+    z-index:2;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.intro p{
+    text-align: center;
+    font-size:25px;
+    margin:0;
+    padding-top:10px;
+    color: whitesmoke;
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    
+
+}
+
+.Introduce{
+    overflow: hidden;
+    background-color: rgb(211, 232, 250);
+}
+
+.Introduce h2{
+    font-size: 55px;
+    color:grey;
+    padding:30px 100px;
+    text-decoration: underline;
+}
+
+.Introduce p{
+    text-align: center;
+    line-height: 2.0;
+    margin-bottom:20px;
+    font-size: 17px;
+}
+
+#first_para{
+    padding-top: 80px;
+}
+
+#last_para{
+    padding-bottom: 150px;
+    overflow: hidden;
+}
+
+
+.skill{
+    margin:0px auto;
+    padding: 0 20px 100px;
+    background-color: mistyrose;
+}
+
+
+.skill h2{
+    font-size: 55px;
+    color:grey;
+    padding:30px 100px;
+    text-decoration: underline;
+    margin-top: 0;
+}
+
+.skill-cards{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 60px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.card{
+    background-color: rgb(181, 227, 252);
+    border-radius: 12px;
+    padding: 30px;
+    width:300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.card h3{
+    font-size: 25px;
+    text-align: center;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid #6666ff;
+}
+
+#ex{
+    color:rgb(25, 0, 255)
+}
+
+.mobile-break {
+    display: none;
+  }
+
+@media screen and (max-width: 600px) {
+    .mobile_break {
+        display: inline;
+    }
+    .intro h1 {
+        font-size: 45px;
+    }
+
+    .intro p {
+        font-size: 18px;
+    }
+
+    .headers {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .header_right a {
+        margin: 10px;
+    }
+
+    .Introduce h2, .skill h2 {
+        font-size: 40px;
+        padding: 20px 0;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+.contact{
+    margin:0px auto;
+    padding: 0 20px 100px;
+    background-color: rgb(191, 243, 209);
+    ;
+}
+
+.contact h2{
+    font-size: 55px;
+    color:grey;
+    padding:30px 100px;
+    text-decoration: underline;
+    margin-top: 0;
+}
+
+.contact p{
+    text-align: left;
+    line-height: 2.0;
+    margin-bottom:20px;
+    font-size: 25px;
+    margin-left: 140px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    font-size: 14px;
+    padding: 1em;
+  }
+}
