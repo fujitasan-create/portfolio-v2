@@ -26,6 +26,44 @@
                 <h2>
                     Outline
                 </h2>
+                <div class="outline-content">
+                <section>
+                    <h3>「かぶちゃんについて」</h3>
+                    <p>
+                    かぶちゃんは、あなたの株取引をちょっぴり応援するAI風のの女の子です。<br>
+                    年齢は20歳、田舎で親の畑を継ぎながら何か副業ができないと思い、株の勉強を始めました。<br>
+                    まだまだ勉強中ですが頑張って予想しているので応援してください。
+                    </p>
+                </section>
+
+                <section>
+                    <h3>「使用した技術」</h3>
+                    <ul>
+                        <li>フロントエンド：HTML, CSS, JavaScript</li>
+                        <li>バックエンド：Python</li>
+                        <li>フレームワーク：Django</li>
+                        <li>外部ライブラリ：numpy, pandas, yfinance, scikit-learn, imblearn</li>
+                        <li>デプロイ：render, GitHub, Docker</li>
+                        <li>開発環境：Windows11, Python3.12.4, VScode</li>
+                        <li>デバイス：CPU;Ryzen5 4500 , GPU;GeForce RTX 4060 , RAM;16GB , SSD;1TB</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>「使用した技術の概要」</h3>
+                    <p>HTML・CSS：HTMLでのリンクやページの作成、およびCSSでのデザイン</p>
+                    <p>JavaScript：デフォルトの表情→かぶちゃんが考えている表情→感情の表情 のシームレスな切り替えに動的処理を採用</p>
+                    <p>Python：バックエンド処理を担当</p>
+                    <ul>
+                        <li>numpy：高速な計算を担当</li>
+                        <li>pandas：単純移動平均やRSI指標など、欠損が含まれるデータの整形や、それらの数値の計算（ta-libを採用しなかった理由は下記）</li>
+                        <li>yfinance：yahoofinanceの非公式API。株価のデータ（始値や終値など）を収集</li>
+                        <li>sklearn：株が上がるか下がるか（二値分類）をGradientBoostingClassifierモデルで作成。GridSearchCVでのhyper-parameterのチューニング</li>
+                        <li>imblearn：データの偏りをSMOTEを使い修正</li>
+                    </ul>
+                    <p>GitHub・render：GitHubリポジトリを作成し、renderにてデプロイ（starterプラン：月7.5ドル）</p>
+                    <p>Docker：Dockerファイルを作り、ローカル環境と同じ状態でデプロイ可能に。これにより重いライブラリを格納</p>
+                </section>
             </div>
         </main>
     </body>

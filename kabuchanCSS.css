@@ -1,6 +1,6 @@
-.Outline{
-    background-color: rgb(221, 213, 247);
-    padding: 30px 100px 600px 30px;
+.Outline {
+  background-color: #f3f0ff;
+  padding: 50px 20px;
 }
 
 .Outline h2{
@@ -8,4 +8,44 @@
     color:grey;
     padding:30px 100px;
     text-decoration: underline;
+}
+
+.outline-content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.outline-content h3 {
+  font-size: 35px;
+  color: #555;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.outline-content p,
+.outline-content li {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.outline-content ul {
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .Outline h2 {
+    font-size: 28px;
+  }
+
+  .outline-content h3 {
+    font-size: 20px;
+  }
+
+  .outline-content p,
+  .outline-content li {
+    font-size: 15px;
+  }
 }
