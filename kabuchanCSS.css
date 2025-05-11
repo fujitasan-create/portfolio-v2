@@ -84,6 +84,50 @@ video {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
+.Ingenuity {
+  background-color: #f5fcd0;
+  padding: 60px 20px;
+}
+
+.Ingenuity h2 {
+    font-size: 55px;
+    color:grey;
+    padding:30px 100px;
+    text-decoration: underline;
+}
+  
+
+.ingenuity-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ingenuity-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 25px;
+  flex: 1 1 300px;
+  max-width: 500px;
+  text-align: left;
+}
+
+.ingenuity-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #444;
+}
+
+.ingenuity-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
 @media screen and (max-width: 600px) {
   .Outline h2 {
     font-size: 28px;
@@ -111,4 +155,13 @@ video {
   .demo-video {
     max-width: 100%;
   }
+
+  .Ingenuity h2 {
+    font-size: 30px;
+  }
+
+  .ingenuity-card {
+    flex: 1 1 100%;
+  }
+
 }
