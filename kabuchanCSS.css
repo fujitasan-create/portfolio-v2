@@ -1,4 +1,11 @@
-#mainback{
+.Outline{
     background-color: rgb(221, 213, 247);
-    padding:1500px;
+    padding: 30px 100px 600px 30px;
+}
+
+.Outline h2{
+    font-size: 55px;
+    color:grey;
+    padding:30px 100px;
+    text-decoration: underline;
 }
