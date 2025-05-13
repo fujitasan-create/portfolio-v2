@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+.works-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+
 .works{
     background-color: beige;
     padding: 30px 100px 600px 30px;
@@ -31,8 +40,7 @@
   display: block;
   text-decoration: none;
   color: inherit;
-  max-width: 300px;
-  margin: 2em auto;
+  width: 280px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
@@ -56,4 +64,10 @@
   font-size: 1rem;
   background-color: #f3f3f3;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .works-item {
+    width: 90%;
+  }
 }
