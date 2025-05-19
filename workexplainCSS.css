@@ -128,6 +128,22 @@ video {
   color: #333;
 }
 
+.Update{
+  background-color: #ccfaca;
+  padding: 60px 20px;
+}
+
+.Update h2 {
+    font-size: 55px;
+    color:grey;
+    padding:30px 100px;
+    text-decoration: underline;
+}
+
+.Update ul{
+    padding:60px
+}
+
 @media screen and (max-width: 600px) {
   .Outline h2 {
     font-size: 28px;
@@ -157,11 +173,17 @@ video {
   }
 
   .Ingenuity h2 {
-    font-size: 30px;
+    font-size: 28px;
+    text-align: center;
   }
 
   .ingenuity-card {
     flex: 1 1 100%;
+  }
+
+  .Update h2{
+    font-size: 28px;
+    text-align: center;
   }
 
 }
