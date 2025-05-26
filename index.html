@@ -6,9 +6,17 @@
         <meta name="description" content="これはfujita-createのポートフォリオです">
         <meta name="author" content="fujita-create">
         <title>Fujita-createのポートフォリオ</title>
-        <link rel="stylesheet" href="myCSS.css">
+        <link rel="stylesheet" href="css/myCSS.css">
     </head>
     <body>
+        <div id="loader">
+            <canvas id="loading-canvas"></canvas>
+            <div id="loading-bar-container">
+                <div id="loading-bar"></div>
+            </div>
+        </div>
+
+        <canvas id="bg"></canvas>
         <header id="headerback">
             <div class="headers">
                 <div class="header_left">
@@ -25,12 +33,7 @@
         </header>
         <main>
             <section>
-                <div class="intro">
-                    <div class="typewriter">
-                        <h1>Fujita-create<br class="mobile_break"> Portfolio</h1>
-                        <p>pyhton勉強中の京大生のポートフォリオ</p>
-                    </div>
-                </div>
+                
                 <hr>
                 <div class="Introduce">
                     <h2>
@@ -115,19 +118,23 @@
                 </div>
                 
             </section>
-        </main>
-        <footer id="Contact" class="contact">
-            <div>
-                <h2>Contact</h2>
-            </div>
-            <div>
-                <p>✉ Mail:blackokayu3@yahoo.co.jp</p>
-                <p>X(旧Twitter):<a href="https://x.com/study_python_"> Twitterアカウントはこちら</a></p>
-                <p>GitHub:<a href="https://github.com/fujitasan-create">GitHubアカウントはこちら</a></p>
+        
+            <section id="Contact" class="contact">
+                <div>
+                    <h2>Contact</h2>
+                </div>
+                <div>
+                    <p>✉ Mail:blackokayu3@yahoo.co.jp</p>
+                    <p>X(旧Twitter):<a href="https://x.com/study_python_"> Twitterアカウントはこちら</a></p>
+                    <p>GitHub:<a href="https://github.com/fujitasan-create">GitHubアカウントはこちら</a></p>
                 
-                <p>案件のご依頼や相談等はメールまたはXのDMよりお願いいたします。</p>
+                    <p>案件のご依頼や相談等はメールまたはXのDMよりお願いいたします。</p>
 
-            </div>
-        </footer>
+                </div>
+            </section>
+        </main>
+
+        <script type="module" src="Three.js/SpaceBackground.js"></script>
+        <script type="module" src="Three.js/earthLoader.js"></script>
     </body>
 </html>

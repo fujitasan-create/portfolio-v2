@@ -6,10 +6,17 @@
         <meta name="description" content="これはfujita-createのポートフォリオ(かぶちゃんの説明のページ)です">
         <meta name="author" content="fujita-create">
         <title>Fujita-createのポートフォリオ</title>
-        <link rel="stylesheet" href="./myCSS.css">
-        <link rel="stylesheet" href="./workexplainCSS.css">
+        <link rel="stylesheet" href="css/myCSS.css">
+        <link rel="stylesheet" href="css/workexplainCSS.css">
     </head>
-    <body>
+    <body id="body">
+        <div id="loader">
+            <canvas id="loading-canvas"></canvas>
+            <div id="loading-bar-container">
+                <div id="loading-bar"></div>
+            </div>
+        </div>
+        <canvas id="bg"></canvas>
         <header id="headerback">
             <div class="headers">
                 <div class="header_left">
@@ -22,6 +29,7 @@
             </div>
         </header>
         <main>
+            <hr>
             <div class="Outline">
                 <h2>
                     Outline
@@ -129,5 +137,7 @@
                 </div>
             </div>        
         </main>
+        <script type="module" src="Three.js/SpaceBackground.js"></script>
+        <script type="module" src="Three.js/earthLoader.js"></script>
     </body>
 </html>

@@ -1,5 +1,4 @@
 .Outline {
-  background-color: #f3f0ff;
   padding: 50px 20px;
 }
 
@@ -32,7 +31,7 @@
 
 .outline-content h3 {
   font-size: 35px;
-  color: #555;
+  color: #ffffff;
   margin-top: 40px;
   margin-bottom: 15px;
 }
@@ -41,7 +40,7 @@
 .outline-content li {
   font-size: 20px;
   line-height: 1.8;
-  color: #333;
+  color: #afadad;
 }
 
 .outline-content ul {
@@ -49,7 +48,6 @@
 }
 
 .Demonstration{
-    background-color: rgb(255, 224, 239);
     padding: 50px 20px;
 }
 
@@ -85,7 +83,6 @@ video {
 }
 
 .Ingenuity {
-  background-color: #f5fcd0;
   padding: 60px 20px;
 }
 
@@ -107,7 +104,7 @@ video {
 }
 
 .ingenuity-card {
-  background-color: #ffffff;
+  background-color: rgb(121, 121, 121);
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   padding: 25px;
@@ -119,17 +116,16 @@ video {
 .ingenuity-card h3 {
   font-size: 20px;
   margin-bottom: 12px;
-  color: #444;
+  color: #000000;
 }
 
 .ingenuity-card p {
   font-size: 15px;
   line-height: 1.6;
-  color: #333;
+  color: #000000;
 }
 
 .Update{
-  background-color: #ccfaca;
   padding: 60px 20px;
 }
 
@@ -141,6 +137,7 @@ video {
 }
 
 .Update ul{
+    color:white;
     padding:60px
 }
 
