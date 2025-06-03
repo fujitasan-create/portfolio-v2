@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="これはfujita-createのポートフォリオ(かぶちゃんの説明のページ)です">
+        <meta name="author" content="fujita-create">
+        <title>Fujita-createのポートフォリオ</title>
+        <link rel="stylesheet" href="css/myCSS.css">
+        <link rel="stylesheet" href="css/workexplainCSS.css">
+    </head>
+    <body>
+        <div id="loader">
+            <canvas id="loading-canvas"></canvas>
+            <div id="loading-bar-container">
+                <div id="loading-bar"></div>
+            </div>
+        </div>
+
+
+        <canvas id="bg"></canvas>
+        <header id="headerback">
+            <div class="headers">
+                <div class="header_left">
+                    <h3>Fujita-createポートフォリオ</h3>
+                </div>
+                <div class="header_right">
+                    <a href="index.html">Home</a>
+                    <a href="works.html">Works</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <hr>
+            <div class="Outline">
+                <h2>
+                    Outline
+                </h2>
+            </div>
+            <div class="outline-content">
+                <section>
+                    <h3>「Makeup」に関して</h3>
+                    <p>
+                    Zoomなどのビデオ通話アプリで使える映像加工アプリです<br>
+                    Webカメラから取得した映像に対して、目の拡大・口や鼻の変形などの顔加工をリアルタイムに適用し、仮想カメラを通じて配信できます。<br>
+                    Googleが開発したMediaPipeを用いることで、顔のランドマーク（目・口・輪郭などの位置）を検出し、映像加工を実装しています。
+                    </p>
+                    <div>
+                        <a href="">
+                            <img src="static/img/makeup.png" alt="Makeupサムネイル"  class="linkimg">
+                        </a>
+                        <p id="click">ダウンロードリンクはこちら</p>
+                    </div>
+
+                </section>
+
+                <section>
+                    <h3>「使用した技術」</h3>
+                    <ul>
+                        <li>フロントエンド：Tkinter(GUI)</li>
+                        <li>バックエンド：Python</li>
+                        <li>外部ライブラリ：numpy, pyvirtualcam, OpenCV, MediaPipe</li>
+                        <li>デプロイ：PyInstaller</li>
+                        <li>開発環境：Windows11, Python3.10.11, VScode, venv, GithubCopilot, OBSvirtualcam</li>
+                        <li>PCデバイス：CPU;Ryzen5 4500 , GPU;GeForce RTX 4060 , RAM;16GB , SSD;1TB </li>
+                        <li>WEBカメラ：DEPSTECH DW50PRO 4K Ultra HD 30fps</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>「使用した技術の概要」</h3>
+                    <p>Tkinter：Pythonの標準ライブラリ。GUIの作成</p>
+                    <p>Python：バックエンド処理を担当</p>
+                    <ul>
+                        <li>numpy：画像データの数値配列処理、拡大縮小・変形時の演算</li>
+                        <li>pyvirtualcam：加工済み映像を仮想カメラとして出力し、Zoom等で使用可能に</li>
+                        <li>OpenCV：カメラ映像の取得、画像の前処理・後処理（色変換、ブラーなど）</li>
+                        <li>MediaPipe：顔の特徴点（ランドマーク）をリアルタイムで検出、Face Mesh モジュールで468点の顔の部位を認識</li>
+                    </ul>
+                    <p>PyInstaller：アプリを.exeファイルとして配布可能に</p>
+                    <p>OBSvirtualcam：映像をカメラ入力として他アプリに渡すためのもの</p>
+                </section>
+            </div>
+            <div class="Demonstration">
+                <h2>
+                    Demonstration
+                </h2>
+                <div class="demo-content">
+                <section>
+                    <p>Makeupの使い方はこちら</p>
+                    <video controls class="demo-video">
+                        <source src="" type="video/mp4">
+                    </video>
+                </section>
+                </div>
+            </div>
+            <div class="Ingenuity">
+                <h2>
+                    Ingenuity
+                </h2>
+
+            </div>
+        </main>
+
+    <script type="module" src="Three.js/SpaceBackground.js"></script>
+    <script type="module" src="Three.js/earthLoader.js"></script>
+    </body>
+</html>
