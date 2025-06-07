@@ -133,8 +133,20 @@
                     <p>✉ Mail:blackokayu3@yahoo.co.jp</p>
                     <p>X(旧Twitter):<a href="https://x.com/study_python_"> Twitterアカウントはこちら</a></p>
                     <p>GitHub:<a href="https://github.com/fujitasan-create">GitHubアカウントはこちら</a></p>
-                
-                    <p>案件のご依頼や相談等はメールまたはXのDMよりお願いいたします。</p>
+                    <p>お問い合わせフォーム</p>
+                    <form id="contact-form">
+                        <label for="name">名前</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">メッセージ</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <button type="submit">送信</button>
+                        <p id="status-message"></p>
+                    </form>
 
                 </div>
             </section>
@@ -142,5 +154,6 @@
 
         <script type="module" src="Three.js/SpaceBackground.js"></script>
         <script type="module" src="Three.js/earthLoader.js"></script>
+        <script src="contact.js"></script>
     </body>
 </html>
