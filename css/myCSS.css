@@ -276,15 +276,17 @@ body.loaded main{
 .contact label {
   display: block;
   margin-top: 1rem;
+  margin-left:100px;
   font-weight: bold;
   color:white;
 }
 
 .contact input,
 .contact textarea {
-  width: 100%;
+  width: 80%;
   padding: 0.6rem;
   margin-top: 0.5rem;
+  margin-left:100px;
   border: 1px solid #969595;
   border-radius: 4px;
   background-color: gray;
