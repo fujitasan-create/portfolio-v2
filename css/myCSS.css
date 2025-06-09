@@ -281,15 +281,23 @@ body.loaded main{
   color:white;
 }
 
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
 .contact input,
 .contact textarea {
-  width: 80%;
-  padding: 0.6rem;
+  width: 100%;
+  padding: 0.8rem;
   margin-top: 0.5rem;
-  margin-left:100px;
+  max-width: 400px; 
+  margin: 0.5rem auto;
   border: 1px solid #969595;
   border-radius: 4px;
   background-color: gray;
+  
 }
 
 .contact button {
@@ -357,6 +365,14 @@ body.loaded main{
         font-size: 16px;
         margin-left: 0;
         text-align: center;
+    }
+
+    .contact input,
+    .contact textarea {
+      font-size: 0.9rem;
+      padding: 0.6rem;
+      padding-left: 1rem;   
+      padding-right: 1rem;
     }
 }
 
