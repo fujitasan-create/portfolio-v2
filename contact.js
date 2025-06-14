@@ -10,7 +10,7 @@ document.getElementById('contact-form').addEventListener('submit',async function
     const statusMessage=document.getElementById('status-message');
 
     try{
-        const res =await fetch('https://contactformapi-ay2q.onrender.com/contact',{
+        const res =await fetch('https://my-api-h54h.onrender.com/contact/contact',{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
