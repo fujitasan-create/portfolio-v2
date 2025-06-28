@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="これはfujita-createのポートフォリオ(かぶちゃんの説明のページ)です">
+        <meta name="author" content="fujita-create">
+        <title>Fujita-createのポートフォリオ</title>
+        <link rel="stylesheet" href="css/myCSS.css">
+        <link rel="stylesheet" href="css/workexplainCSS.css">
+    </head>
+    <body>
+        <div id="loader">
+            <canvas id="loading-canvas"></canvas>
+            <div id="loading-bar-container">
+                <div id="loading-bar"></div>
+            </div>
+        </div>
+
+
+        <canvas id="bg"></canvas>
+        <header id="headerback">
+            <div class="headers">
+                <div class="header_left">
+                    <h3>Fujita-createポートフォリオ</h3>
+                </div>
+                <div class="header_right">
+                    <a href="index.html">Home</a>
+                    <a href="works.html">Works</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <hr>
+            <div class="Outline">
+                <h2>
+                    Outline
+                </h2>
+                <div class="outline-content">
+                <section>
+                    <h3>「かぶちゃん ver2.0」</h3>
+                    <p>
+                        かぶちゃんは、あなたの株取引をちょっぴり応援してくれる、進化系AI風の女の子です。<br>
+                        年齢は変わらず20歳。田舎で畑を手伝いながら、副業として株の勉強を続けてきました。<br>
+                        最近はニュースの空気を読んだり、表情を変えたり、チャットで相談にも乗れるようになってきました。<br>
+                        まだまだ修行中ですが、前よりちょっぴり頼れる存在になったかも？これからも応援よろしくお願いします！
+                    </p>
+                    <div>
+                        <a href="https://www.kabuchan-app.click/">
+                            <img src="static/img/kabuchan_default.png" alt="かぶちゃんサムネイル"  class="linkimg">
+                        </a>
+                        <p id="click">クリックでアプリへ</p>
+                    </div>
+
+                </section>
+                <section>
+                    <h3>「使用した技術」</h3>
+                    <ul>
+                        <li>フロントエンド：Next.js, TypeScript, CSS Modules</li>
+                        <li>バックエンド：Python</li>
+                        <li>外部ライブラリ：FastAPI, SlowAPI, numpy, matplotlib, mplfinance, pandas, yfinance, scikit-learn, imblearn, Mecab, BeautifulSoup, jaconb, SQLAlchamy, OpenAI API</li>
+                        <li>デプロイ：render, GitHub, AWS(S3, CloudFront, Route53)</li>
+                        <li>データベース：PostgreSQL</li>
+                        <li>開発環境：Windows11, Python3.10.1, VScode</li>
+                        <li>デバイス：CPU;Ryzen5 4500 , GPU;GeForce RTX 4060 , RAM;16GB , SSD;1TB</li>
+                        <li>その他：お名前.com, GoogleAnalytics, 忍者Admax</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>「使用した技術の概要」</h3>
+
+                    <p>Next.js：Reactベースのフレームワーク。ページ遷移やAPI通信の効率化に加え、TypeScriptと組み合わせて安全かつ保守しやすい設計にしました。</p>
+                    <p>TypeScript：型の明示により、開発中のエラーを減らし、規模が大きくなっても安心して保守できるようにしました。</p>
+                    <p>CSS Modules：各コンポーネントにスタイルを閉じ込め、デザインの衝突を防ぎました。</p>
+
+                    <p>Python：バックエンド全体を構成。APIの提供やデータ処理、機械学習を担当。</p>
+
+                        <ul>
+                            <li>FastAPI：非同期処理対応の軽量Webフレームワーク。複数の機能をAPIとして分離して提供。</li>
+                            <li>SlowAPI：OpenAI APIアクセスに対してレート制限を実装。</li>
+                            <li>numpy / pandas：株価データの整形やテクニカル指標（移動平均、RSI等）の計算を実装。</li>
+                            <li>matplotlib / mplfinance：折れ線グラフやローソク足チャートの描画。</li>
+                            <li>yfinance：Yahoo! Financeの非公式APIを通じて株価データを取得。</li>
+                            <li>scikit-learn：株価が上がるかどうかを予測する分類モデル（GradientBoostingClassifier）を作成。GridSearchCVでチューニング。</li>
+                            <li>imblearn：SMOTEを用いて学習データのクラスバランスを調整。</li>
+                            <li>Mecab：日本語テキストの形態素解析用の辞書として使用（MLAsk本体は使用せず、辞書のみ活用）。</li>
+                            <li>BeautifulSoup：Yahoo!ファイナンスのニュース見出しをスクレイピング。</li>
+                            <li>jaconv：全角・半角の正規化など日本語文字の前処理に利用。</li>
+                            <li>SQLAlchemy：FastAPIとPostgreSQLの接続に使用。問い合わせフォームのDB操作を担当。</li>
+                        </ul>
+
+                    <p>デプロイには、Renderを使って各APIをホスティング。</p>
+                    <p>AWS（S3, CloudFront, Route53）を使って静的ファイルや独自ドメインを設定し、高速表示と信頼性を確保しました。</p>
+
+                    <p>データベースはRender上でPostgreSQLを運用し、お問い合わせ情報などを保存しています。</p>
+
+                    <p>解析や広告収益のためにGoogle Analyticsや忍者Admaxを導入。ドメインはお名前.comで取得し、Route53に連携。</p>
+
+                    <p>開発環境はWindows11, Python3.10.1, VSCode。  
+                        デバイスはRyzen5 4500 / GeForce RTX 4060 / RAM 16GB / SSD 1TB。</p>
+                    </section>
+
+                        
+
+
+    </body>
+    <script type="module" src="Three.js/SpaceBackground.js"></script>
+    <script type="module" src="Three.js/earthLoader.js"></script>
+</html>
